@@ -5,14 +5,14 @@ import { IoPersonSharp } from 'react-icons/io5';
 const Contact = ({ id, name, number, onDelete }) => {
   return (
     <>
-      <ul className={s.contact_item_content}>
-        <li>
+      <div className={s.contact_item_wrap}>
+        <span>
           <IoPersonSharp /> {name}
-        </li>
-        <li>
+        </span>
+        <span>
           <FaPhoneAlt /> {number}
-        </li>
-      </ul>
+        </span>
+      </div>
       <button onClick={() => onDelete(id)} className={s.contact_btn_delete}>
         Delete
       </button>

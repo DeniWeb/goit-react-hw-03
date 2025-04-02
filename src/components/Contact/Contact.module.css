@@ -1,7 +1,7 @@
-.contact_item_content {
+.contact_item_wrap {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .contact_btn_delete {
@@ -14,6 +14,6 @@
   &:hover {
     color: beige;
     border-color: beige;
-    background-color: black;
+    background-color: rgb(92, 90, 90);
   }
 }

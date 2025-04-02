@@ -1,17 +1,16 @@
-import { useState } from 'react';
 import s from './SearchBox.module.css';
 
-const SearchBox = ({ name, handleChange }) => {
+const SearchBox = ({ handleFilter }) => {
   return (
-    <>
+    <div className={s.search_wrapper}>
+      <label htmlFor="search">Find contact by name:</label>
       <input
         type="text"
-        value={name}
-        onChange={handleChange}
+        id="search"
+        onChange={handleFilter}
         className={s.search_input}
-        placeholder="Пошук по іменам"
       />
-    </>
+    </div>
   );
 };
 
